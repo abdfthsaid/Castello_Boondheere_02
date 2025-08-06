@@ -16,7 +16,7 @@ const PaymentSection = ({ selectedAmount, selectedMethod, selectMethod }) => {
     const amount = parseFloat(selectedAmount.replace("$", ""));
 
     try {
-      const res = await axios.post("https://danabbackend.onrender.com/api/pay/02", {
+      const res = await axios.post("https://phase2backeend-ptsd.onrender.com/pay/02", {
         phoneNumber: number,
         amount: amount,
       });
